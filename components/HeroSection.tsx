@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Navbar } from "./Navbar";
 
-const imgHeroSection = "/hero-images/hero-section.png";
+const imgHeroSection = "/bg-img.jpeg";
 const imgImgCard1 = "/hero-images/img1.png";
 const imgImgCard2 = "/hero-images/img2.png";
 const imgImgCard3 = "/hero-images/img3.png";

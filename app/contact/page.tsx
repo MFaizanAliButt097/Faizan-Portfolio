@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 
 const heroBackground =
-  "https://www.figma.com/api/mcp/asset/fa88a8fc-9408-4bd2-bb43-7d153f6db2a9";
+  "/hero-images/img1.png";
 
 const contactItems = [
   {

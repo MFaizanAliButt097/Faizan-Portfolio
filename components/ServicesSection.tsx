@@ -1,37 +1,37 @@
 const services = [
   {
     title: "LOGO Design",
-    image: "https://www.figma.com/api/mcp/asset/e7a5d1ca-bc7d-43f7-add7-9b609054418c",
+    image: "/Services/Group%2084%20(1).png",
     imageClassName: "object-cover",
     cardNodeId: "1:85",
   },
   {
     title: "Social Media Post Design",
-    image: "https://www.figma.com/api/mcp/asset/4cc4be0a-ae3f-431d-a1df-e5dbb24b67cb",
+    image: "/Services/Group%2084%20(2).png",
     imageClassName: "object-cover object-center",
     cardNodeId: "1:94",
   },
   {
     title: "Ui/Ux Design",
-    image: "https://www.figma.com/api/mcp/asset/9c6979d5-a73e-4f51-8ba9-19b2a338343d",
+    image: "/Services/Group%2084%20(3).png",
     imageClassName: "object-cover",
     cardNodeId: "1:103",
   },
   {
     title: "Branding & Identity",
-    image: "https://www.figma.com/api/mcp/asset/3fcab59f-d588-4f46-85d3-f90e459c48ae",
+    image: "/Services/Group%2084%20(4).png",
     imageClassName: "h-[142.97%] w-[99.98%] max-w-none object-fill left-0 top-[-0.98%]",
     cardNodeId: "1:113",
   },
   {
     title: "Meta Ad’s",
-    image: "https://www.figma.com/api/mcp/asset/70e40f46-820a-4b10-8205-e8d24eb4b0cf",
+    image: "/Services/Group%2084%20(5).png",
     imageClassName: "object-cover",
     cardNodeId: "1:122",
   },
   {
     title: "Social Media Management",
-    image: "https://www.figma.com/api/mcp/asset/38517a62-7ba2-4d59-88a5-c71092ba5643",
+    image: "/Services/Group%2084%20(6).png",
     imageClassName: "object-cover object-center",
     cardNodeId: "1:131",
   },

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const imgRectangle73 =
-  "http://localhost:3845/assets/557006c42886dc42f61d6f689608f658b497afd3.png";
+  "/faizan.png";
 
 const stats = [
   { value: 10, decimals: 0, label: "Done By Projects" },
