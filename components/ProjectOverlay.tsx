@@ -2,9 +2,15 @@ type ProjectOverlayProps = {
   description: string;
   image: string;
   onClose: () => void;
-  overlay?: BrandingOverlay | SocialPostsOverlay | WebsitePreviewOverlay | MetaAdsOverlay;
+  overlay?: ProjectOverlayData;
   title: string;
 };
+
+export type ProjectOverlayData =
+  | BrandingOverlay
+  | SocialPostsOverlay
+  | WebsitePreviewOverlay
+  | MetaAdsOverlay;
 
 type BrandingOverlay = {
   type: "branding";

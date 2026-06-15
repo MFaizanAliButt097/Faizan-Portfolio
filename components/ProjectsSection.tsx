@@ -2,9 +2,17 @@
 
 import { useState } from "react";
 import { ProjectCard } from "./ProjectCard";
-import { ProjectOverlay } from "./ProjectOverlay";
+import { ProjectOverlay, type ProjectOverlayData } from "./ProjectOverlay";
 
-const projects = [
+type Project = {
+  title: string;
+  image: string;
+  imageClassName: string;
+  nodeId: string;
+  overlay: ProjectOverlayData;
+};
+
+const projects: Project[] = [
   {
     title: "LOGO & Branding",
     image: "https://www.figma.com/api/mcp/asset/d573a979-ee29-4cf3-a7ff-08fe8febcf58",
