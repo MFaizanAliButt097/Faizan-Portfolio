@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 
 const heroBackground =
-  "/hero-images/img1.png";
+  "/bg-img.jpeg";
 
 const contactItems = [
   {

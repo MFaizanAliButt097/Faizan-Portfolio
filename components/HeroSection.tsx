@@ -9,10 +9,8 @@ const imgImgCard4 = "/hero-images/img4.png";
 const imgImgCard5 = "/hero-images/img5.png";
 const imgImgCard6 = "/hero-images/img6.png";
 const imgImgCard7 = "/hero-images/img7.png";
-const imgImgCard9 = "/hero-images/img9.png";
-// const imgImgCard9 = "/hero-images/img1.png";
 const imgImgCard8 = "/hero-images/img8.png";
-
+const imgImgCard9 = "/hero-images/Img9.png";
 function GlassPill({
   children,
   className = "",
@@ -24,15 +22,14 @@ function GlassPill({
   innerClassName?: string;
   href?: string;
 }) {
-  const content = (
-      <div
-        className={`relative z-10 overflow-hidden rounded-full bg-[#fbfbfb] font-bold text-black shadow-[0_5px_12px_rgba(0,0,0,0.18),inset_0_1px_0_rgba(255,255,255,0.95),inset_0_-1px_0_rgba(0,0,0,0.07)] before:pointer-events-none before:absolute before:inset-0 before:rounded-full before:bg-[radial-gradient(circle_at_9px_8px,rgba(0,0,0,0.16)_0_0.8px,transparent_1.2px),radial-gradient(circle_at_24px_18px,rgba(0,0,0,0.12)_0_0.8px,transparent_1.2px),radial-gradient(circle_at_38px_7px,rgba(0,0,0,0.10)_0_0.8px,transparent_1.2px)] before:bg-[length:46px_28px] before:opacity-30 before:content-[''] ${innerClassName}`}
-      >
-        <p className="relative z-10 whitespace-nowrap leading-normal">{children}</p>
-      </div>
-  );
-  const pillClassName = `absolute inline-flex rounded-full bg-[rgba(18,18,18,0.78)] px-2 py-1.5 shadow-[0_12px_30px_rgba(0,0,0,0.45),inset_0_1px_2px_rgba(255,255,255,0.32),inset_0_-3px_8px_rgba(0,0,0,0.45)] ring-1 ring-white/25 backdrop-blur-xl transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.025] hover:shadow-[0_16px_34px_rgba(0,0,0,0.48),inset_0_1px_2px_rgba(255,255,255,0.36),inset_0_-3px_8px_rgba(0,0,0,0.45)] active:translate-y-0 active:scale-[0.99] before:pointer-events-none before:absolute before:inset-[1px] before:rounded-full before:bg-[linear-gradient(145deg,rgba(255,255,255,0.18),rgba(255,255,255,0.04)_32%,rgba(0,0,0,0.18)_72%,rgba(255,255,255,0.06))] before:content-[''] after:pointer-events-none after:absolute after:inset-x-5 after:top-[2px] after:h-[2px] after:rounded-full after:bg-white/25 after:blur-[1px] after:content-[''] ${className}`;
-
+ const content = (
+  <div
+    className={`relative z-10 overflow-hidden rounded-full bg-[#fbfbfb] font-bold text-black shadow-[0_5px_12px_rgba(0,0,0,0.18)] ${innerClassName}`}
+  >
+    <p className="relative z-10 whitespace-nowrap leading-normal">{children}</p>
+  </div>
+);
+  const pillClassName = `absolute inline-flex rounded-full bg-[#121212] px-2 py-1.5 shadow-[0_12px_30px_rgba(0,0,0,0.45)] transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:scale-[1.025] hover:shadow-[0_16px_34px_rgba(0,0,0,0.48)] active:translate-y-0 active:scale-[0.99] ${className}`;
   if (href) {
     return (
       <Link className={pillClassName} href={href}>
@@ -61,7 +58,7 @@ function ImageCard({
 }) {
   return (
     <div
-      className={`${className} cursor-pointer will-change-transform transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:z-50 hover:-translate-y-5 hover:scale-[1.035] hover:shadow-[0_28px_55px_rgba(0,0,0,0.5)]`}
+      className={`${className} cursor-pointer will-change-transform transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1.5 hover:scale-[1.008] hover:shadow-[0_18px_36px_rgba(0,0,0,0.36)]`}
       data-name={name}
     >
       <img
@@ -93,12 +90,12 @@ export function HeroSection() {
       <div className="absolute left-1/2 top-0 h-[1024px] w-[1440px] origin-top -translate-x-1/2 scale-[0.36] sm:scale-[0.53] md:scale-[0.67] lg:scale-[0.83] min-[1200px]:scale-[0.88] min-[1360px]:scale-[0.945] min-[1440px]:scale-100">
         <div className="absolute left-[calc(58.33%+8.63px)] top-[-135px] flex h-[1383.952px] w-[947.02px] items-center justify-center">
           <div className="flex-none rotate-[19.97deg]">
-            <div className="h-[1274.663px] w-[544.413px] bg-[rgba(49,49,49,0.32)] blur-[75px]" />
+            <div className="h-[1274.663px] w-[544.413px] " />
           </div>
         </div>
         <div className="absolute left-[-418px] top-[-121.77px] flex h-[1280.051px] w-[834.437px] items-center justify-center">
           <div className="-scale-y-100 flex-none rotate-[160.03deg]">
-            <div className="h-[1197.446px] w-[452.688px] bg-[rgba(49,49,49,0.32)] blur-[75px]" />
+            <div className="h-[1197.446px] w-[452.688px] " />
           </div>
         </div>
         <div className="absolute left-[-44px] top-[-49px] flex h-[179px] w-[1582px] items-center justify-center">
@@ -230,3 +227,7 @@ export function HeroSection() {
     </section>
   );
 }
+
+
+
+
