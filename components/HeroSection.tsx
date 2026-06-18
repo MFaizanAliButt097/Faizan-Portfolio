@@ -58,7 +58,7 @@ function ImageCard({
 }) {
   return (
     <div
-      className={`${className} cursor-pointer will-change-transform transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1.5 hover:scale-[1.008] hover:shadow-[0_18px_36px_rgba(0,0,0,0.36)]`}
+      className={`${className} cursor-pointer will-change-transform transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1.5 hover:scale-[1.008]`}
       data-name={name}
     >
       <img
@@ -203,7 +203,7 @@ export function HeroSection() {
           />
         </div>
 
-        <div className="absolute left-[190px] top-[233px] h-[196px] w-[1061px] overflow-hidden">
+        <div className="absolute left-[190px] top-[220px] w-[1061px]">
           <div className="absolute left-1/2 top-0 -translate-x-1/2 whitespace-nowrap bg-gradient-to-b from-white from-[29.167%] to-[#989898] to-[111.72%] bg-clip-text text-center text-[0px] font-extrabold leading-[0] text-transparent">
             <p className="mb-0 text-[82px]">
               <span className="leading-[1.2]">Full Stack </span>
@@ -227,7 +227,3 @@ export function HeroSection() {
     </section>
   );
 }
-
-
-
-

@@ -79,8 +79,9 @@ function ContactPageHero() {
         src={heroBackground}
       />
       <div className="absolute inset-0 bg-black/10" />
+      <Navbar />
       <div className="absolute left-1/2 top-0 h-[1024px] w-[1440px] origin-top -translate-x-1/2 scale-[0.34] sm:scale-[0.5] md:scale-[0.62] lg:scale-[0.72] xl:scale-[0.82]">
-        <Navbar />
+        
       </div>
       <div className="relative z-10 mx-auto flex h-full w-full max-w-[1440px] flex-col items-center justify-center px-5 pt-16 text-center sm:px-8 lg:px-[119px]">
         <ContactPill />

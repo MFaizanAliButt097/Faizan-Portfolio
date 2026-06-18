@@ -28,7 +28,7 @@ export function Navbar() {
         className="flex flex-col justify-center font-sora text-[32px] font-bold capitalize leading-6 text-white"
         href="/"
       >
-        LOGO
+        Designify
       </Link>
 
       <nav className="group/nav relative flex h-[52px] w-[419px] shrink-0 items-start rounded-[1000px] border border-white bg-[rgba(255,255,255,0.10)] px-[18px] py-2.5 shadow-[0_12px_28px_rgba(0,0,0,0.36),inset_0_1px_2px_rgba(255,255,255,0.20),inset_0_-2px_5px_rgba(0,0,0,0.32)] backdrop-blur-[6px]">

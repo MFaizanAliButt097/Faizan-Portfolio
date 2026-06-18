@@ -6,8 +6,8 @@ import { ProjectOverlay, type ProjectOverlayData } from "./ProjectOverlay";
 
 type Project = {
   title: string;
+  description: string;
   image: string;
-  imageClassName: string;
   nodeId: string;
   overlay: ProjectOverlayData;
 };
@@ -15,8 +15,9 @@ type Project = {
 const projects: Project[] = [
   {
     title: "LOGO & Branding",
-    image: "/Branding/Group%20193.png",
-    imageClassName: "h-[131.11%] w-full max-w-none top-[-0.07%] left-[-0.04%]",
+    description:
+      "Logo systems, brand identity direction, and polished visual assets built to make each business feel memorable and consistent.",
+    image: "/MARKETING/logoandbranding.png",
     nodeId: "1:141",
     overlay: {
       type: "branding",
@@ -36,8 +37,9 @@ const projects: Project[] = [
   },
   {
     title: "Social Media Posts",
-    image: "/Social%20Media%20Posts/Rectangle%20104.png",
-    imageClassName: "h-[168.88%] w-[103.05%] max-w-none top-[-2.44%] left-[-1.52%]",
+    description:
+      "Creative social post designs made for engagement, campaign consistency, and fast-moving brand communication across platforms.",
+    image: "/MARKETING/socialMedia.jpg",
     nodeId: "1:151",
     overlay: {
       type: "socialPosts",
@@ -60,25 +62,29 @@ const projects: Project[] = [
   },
   {
     title: "Ui/Ux Designing",
-    image: "/SITES/Site%201.png",
-    imageClassName: "h-[233.01%] w-full max-w-none top-[-3.53%] left-0",
+    description:
+      "Modern UI/UX concepts focused on clean layouts, intuitive user flows, and interfaces that feel sharp on every screen.",
+    image: "/MARKETING/uiux.jpg",
     nodeId: "1:162",
     overlay: {
       type: "websitePreview",
       nodeId: "1:478",
       assets: [
+        "/MARKETING/uiux.jpg",
         "/SITES/Site%201.png",
         "/SITES/Site%202.png",
         "/SITES/Site%203.png",
         "/SITES/Site%204.png",
         "/SITES/Site%206.png",
+        
       ],
     },
   },
   {
     title: "Social Media Marketing",
-    image: "/MARKETING/Group%20198.png",
-    imageClassName: "h-[131.11%] w-full max-w-none top-[-5.25%] left-[0.02%]",
+    description:
+      "Meta ads and marketing creatives designed to support reach, conversion goals, and stronger performance across paid campaigns.",
+    image: "/MARKETING/meta.jpg",
     nodeId: "1:172",
     overlay: {
       type: "metaAds",
@@ -94,9 +100,6 @@ const projects: Project[] = [
     },
   },
 ];
-
-const description =
-  "Complete cold email infrastructure management from domain setup to warmup email infrastructure Complete cold email infrastructure management from domain setup to warmup email infrastructure";
 
 function SectionPill() {
   return (
@@ -127,7 +130,6 @@ export function ProjectsSection() {
               <ProjectCard
                 key={project.title}
                 {...project}
-                description={description}
                 onOpen={() => setActiveProjectIndex(index)}
               />
             ))}
@@ -137,7 +139,7 @@ export function ProjectsSection() {
 
       {activeProject ? (
         <ProjectOverlay
-          description={description}
+          description={activeProject.description}
           image={activeProject.image}
           onClose={() => setActiveProjectIndex(null)}
           overlay={activeProject.overlay}
